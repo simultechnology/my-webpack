@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   mode: 'development',
@@ -13,16 +13,15 @@ module.exports = {
         test: /\.css/,
         use: [
           'style-loader',
-          {loader: 'css-loader', options: {url: false}},
-        ],
-      },
+          {loader: 'css-loader', options: {url: false}}
+        ]
+      }
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 39000,
     open: true
-  },
-};
-  
+  }
+}
