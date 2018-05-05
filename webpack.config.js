@@ -2,10 +2,13 @@ const path = require('path')
 
 module.exports = {
   mode: 'development',
-  entry: `./src/index.js`,
+  entry: {
+    index: `./src/index.js`,
+    quiz: `./src/quiz.js`
+  },
   output: {
     path: `${__dirname}/dist`,
-    filename: 'main.js'
+    filename: '[name].js'
   },
   module: {
     rules: [

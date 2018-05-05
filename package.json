@@ -8,7 +8,8 @@
     "watch": "webpack --watch",
     "start": "webpack-dev-server",
     "test": "standard",
-    "fix": "standard --fix"
+    "fix": "standard --fix",
+    "fix-style": "stylelint src/css/*.css --fix"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,8 @@
     "prettier": "^1.12.1",
     "standard": "^11.0.1",
     "style-loader": "^0.21.0",
+    "stylelint": "^9.2.0",
+    "stylelint-config-standard": "^18.2.0",
     "webpack": "^4.7.0",
     "webpack-cli": "^2.1.2",
     "webpack-dev-server": "^3.1.4"
